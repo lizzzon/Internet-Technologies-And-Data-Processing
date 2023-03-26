@@ -1,82 +1,80 @@
-# Курсы сборки игровых компьютеров
+# Gaming Computer Assembly Courses
 
 --- 
-Проект предполагает собой сайт для записи клиентов на курсы по сборке игровых ПК.
+The project involves a site for enrolling clients in courses on assembling gaming PCs.
 
-Макет сайта выполнен в редакторе Figma.
+The layout of the site was made in the Figma editor.
 
-Всего сайт имеет 6 блоков:
-  + Информация
-  + Комплектующие
-  + Запись на курс
-  + Контакты
-  + Авторизация/регистрация
-  + Корзина
+In total, the site has 6 blocks:
+  + Information
+  + Accessories
+  + Registration for the course
+  + Contacts
+  + Authorization/registration
+  + Basket
 
-Первоначально клиент попадает на стартовую страницу сайта, где уже по удобству пользования
-выбирает для себя как лучше передвигаться между блоками - последствием свайпа вниз
-или выбором на шапке сайта. 
+Initially, the client gets to the home page of the site, where, for ease of use,
+chooses for himself how best to move between blocks - a consequence of the swipe down
+or by choosing on the header of the site.
 
-    Домашняя страница + header 
-На скрине ниже изображена стартовая страница, на которую пользователь
-попадает при загрузке сайта. 
+    Home page + header
+The screenshot below shows the start page to which the user
+hit when the site loads.
 
 ![image](./mock_up/assets/main.png)
 
-Основная функциональность данной страницы заключается в навигации по сайту и содержании
-общей информации по теме. Активная кнопка "Заказать сейчас" перенаправляет пользователя
-на блок информации про курс. Слайдер внизу содержит общую информацию о плюсах иметь мощный компьютер.
+The main functionality of this page is site navigation and content.
+general information on the topic. An active "Order Now" button redirects the user
+to the block of information about the course. The slider at the bottom contains general information about the pros of having a powerful computer.
+User authorization is performed after pressing the button with the "user" icon.
+The cart button, when clicked, will show the contents of the cart.
 
-Авторизация пользователя выполняется после нажатия на кнопку с иконкой "user".
-Кнопка корзины при нажатии покажет содержимое корзины.
-
-    На данном этапе можно обозначить основной функционал сайта.
-Пользователь заходит в раздел "комплектующие", где выбирает желаемые и добавляет в корзину.
-Предоставляется возможность записи на курс на отдельном блоке сайта (при этом стоимость курса при регистрации на него
-автоматически добавится в общую стоимость корзины).
+    At this stage, you can identify the main functionality of the site.
+The user enters the "components" section, where he selects the desired ones and adds them to the basket.
+It is possible to enroll in a course on a separate block of the site (at the same time, the cost of the course when registering for it
+automatically added to the total cost of the basket).
 
 ![image](./mock_up/assets/basket.png)
 
 
-На скриншоте выше продемонстрирован макет всплывающего окна корзины.
+The screenshot above shows the cart popup layout.
 
-    Аутентификация.
-Аутентификация пользователя реализована окном с выбором желаемого действия - регистрации или авторизации.
-Окно входа в систему:
+    Authentication.
+User authentication is implemented by a window with a choice of the desired action - registration or authorization.
+Login window:
 
 ![image](./mock_up/assets/login.png)
 
-Окно регистрации: 
+Registration window:
 
 ![image](./mock_up/assets/register.png)
 
-Смена режима аутентификации сопровождается плавным перемещением местами гифки и заполняемого поля.
-На примере вкладки аутентификации иконка сайта выглядит следующим образом:
+Changing the authentication mode is accompanied by a smooth movement of the GIF and the field to be filled in places.
+Using the authentication tab as an example, the site icon looks like this:
 
 ![image](./mock_up/assets/site_icon.png)
 
-    Информационная страница.
-Основная активность - подсказки. 
+    Information page.
+The main activity is hints.
 
 ![image](./mock_up/assets/info.png)
 
-При нажатии на знак "+" подсказка появляется. На данном скриншоте все подсказки активны.
-Примечание: чтобы надпись сверху не обрезалась на устройствах типа MacBook Pro, островок с заглавием 
-реализован немного вытянутым вниз. 
+When you click on the "+" sign, a tooltip appears. In this screenshot, all hints are active.
 
-    Страница каталога - магазина.
-Данная страница представляет собой магазин комплектующих, которые можно приобрести (добавить
-в корзину). Для этого нужно нажать на значок джойстика.
+    Catalog page - shop.
+This page is a store of accessories that can be purchased (add to cart). To do this, click on the joystick icon.
 
 ![image](./mock_up/assets/shop.png)
 
-Также присутствует возможность выбора категории нужного устройства.
-Основное содержание страницы - краткая информация о приобретаемых товарах.
+There is also an option to select the category of the desired device.
+The main content of the page is a brief information about the purchased goods.
 
-    Страница записи на курс + контакты(footer).
-На этой странице находится регистрация пользователя на курсы по сборке компьютера. 
-От юзера требуется быть авторизированным на сайте, а так же заполнить небольшую форму-регистрацию на курс.
+    Registration page for the course + contacts (footer).
+This page contains user registration for computer assembly courses.
+The user is required to be authorized on the site, as well as fill out a small registration form for the course.
 
-![image](./mock_up/assets/course_footer.png)
+![image](./mock_up/assets/course.png)
 
-Футер сайта реализован в классическом его представлении. На нем располагаются логотип компании и контакты.
+The site footer is implemented in its classic view. It contains the company logo and contacts.
+
+![image](./mock_up/assets/footer.png)
