@@ -1,0 +1,39 @@
+/*Message buttons on info-page*/
+
+.collapsible {
+    background-color: #4bb6b7;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 130px;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    border-radius: 40px;
+    font-weight: 700;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #fc73da;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: rgba(191, 191, 191, 0.6);
+    border-radius: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+}
+
+.content-collapsible {
+    padding-top: 140px;
+    padding-left: 340px;
+}

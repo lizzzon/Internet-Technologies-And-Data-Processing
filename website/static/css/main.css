@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Rubik+Mono+One&family=Rubik:wght@300&display=swap');
-
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-    margin: 0 166px;
-}
+/*Header*/
 
 .header {
-    background-image: url('../assets/main_info_pages/main/main-page.png');
+    background-image: url('../../assets/main_info_pages/main/main-page.png');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,15 +34,15 @@ body {
     right: 300px
 }
 
+/*Main*/
+
 .header-title {
     margin-top: -600px;
     text-align: left;
     margin-left: 55px;
-    font-style: normal;
     font-weight: 800;
     display: flex;
     font-size: 50px;
-    text-transform: uppercase;
 
     color: #000000;
 }
@@ -63,7 +54,6 @@ body {
 .header-subtitle {
     margin-top: -300px;
     font-family: 'Rubik', sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 20px;
     text-align: left;
@@ -76,7 +66,6 @@ body {
 
 .header-price {
     margin-top: -260px;
-    font-style: normal;
     font-weight: 300;
     font-size: 25px;
     text-align: center;
@@ -85,65 +74,7 @@ body {
     left: 100px;
 }
 
-.footer {
-    background-color: #FCE6FF;
-    padding: 5px 0 10px;
-    color: #826AEF;
-    margin-top: auto;
-}
-
-.footer__menu{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-line {
-    padding-left: 35px;
-    padding-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer__menu-title {
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    margin-right: 80px;
-
-    transition: color 0.3s linear;
-}
-.footer__menu-title:hover {
-    color: #fc73da
-}
-
-li.telegram {
-    list-style-image: url(../assets/general/telegram.png);
-}
-
-li.instagram {
-    list-style-image: url(../assets/general/instagram.png);
-    padding-top: 10px;
-}
-p {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.page {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-
-.info-page {
-    background-image: url('../assets/main_info_pages/info/info.png');
-    height: 110vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 370px;
-}
+/*Button*/
 
 button {
     margin-top: 150px;
@@ -194,8 +125,4 @@ button:before {
 
 button:hover::before {
     filter: blur(10px);
-}
-
-button:active {
-    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }
