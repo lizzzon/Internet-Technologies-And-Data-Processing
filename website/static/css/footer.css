@@ -1,0 +1,48 @@
+/*Footer*/
+
+#footer {
+    background-color: #FCE6FF;
+    padding: 5px 0 10px;
+    color: #826AEF;
+    margin-top: auto;
+    height: 18%;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-line {
+    padding-left: 35px;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__menu-title {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 80px;
+
+    transition: color 0.3s linear;
+}
+.footer__menu-title:hover {
+    color: #fc73da
+}
+
+li.telegram {
+    list-style-image: url(../../assets/general/telegram.png);
+}
+
+li.instagram {
+    list-style-image: url(../../assets/general/instagram.png);
+    padding-top: 10px;
+}
+p {
+    font-size: 20px;
+    font-weight: 300;
+}

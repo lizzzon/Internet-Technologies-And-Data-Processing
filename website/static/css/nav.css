@@ -1,0 +1,36 @@
+/*Site Navigation*/
+
+html, body, header, #info-page, #shop-page, #course-page {
+    height: 100%;
+}
+
+#main-page, #info-page, #shop-page, #course-page {
+    padding-top: 2em;
+}
+
+h2 {
+    font-size: 3em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#info-page {
+    background-image: url("../../assets/main_info_pages/info/info.png");
+    background-size: cover;
+}
+
+#shop-page {
+    background-image: url("../../assets/shop/shop-page.png");
+    background-size: cover;
+}
+
+#course-page {
+    background-image: url("../../assets/course/course-page.png");
+    background-size: cover;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}

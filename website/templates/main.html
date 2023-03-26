@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset="UTF-8"/>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/main.css">
     <title>Compics</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/message_button.css">
+    <link rel="stylesheet" href="../static/css/shop.css">
+    <link rel="stylesheet" href="../static/css/course.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/base.css">
     <link rel="shortcut icon" href="../assets/general/logo.png" type="image/png">
 </head>
+
 <body>
-<div class="page">
-    <header class="header">
-      <div class="container">
+<header class="header">
+    <div class="container">
         <div class="header-line">
-          <div class="header-logo">
-            <img src="../assets/general/logotype.svg" alt="">
-          </div>
-              <div class="nav">
-                <a class="nav-item" href="">Information</a>
-                <a class="nav-item" href="">Accessories</a>
-                <a class="nav-item" href="">Course</a>
-                <a class="nav-item" href="">Contacts</a>
-              </div>
+            <div class="header-logo">
+                <img src="../assets/general/logotype.svg" alt="">
+            </div>
+            <div class="nav">
+                <a class="nav-item" href="#info-page">Information</a>
+                <a class="nav-item" href="#shop-page">Accessories</a>
+                <a class="nav-item" href="#course-page">Course</a>
+                <a class="nav-item" href="#footer">Contacts</a>
+            </div>
             <div class="auth">
                 <a href="#">
                     <img src="../assets/main_info_pages/main/user.png" alt="">
@@ -31,11 +36,11 @@
                 </a>
             </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main class="main">
-        <section class="main-page">
+<main class="main">
+    <div id="main-page">
         <div class="container">
             <div class="header-down">
                 <h1 class="header-title">
@@ -46,40 +51,259 @@
                     quality of your equipment.<br>Who can withstand a ping above 100?
                 </h2>
                 <p class="header-price">
-                    Collect the dream<br>for only  <span style="color: #fc73da; font-weight: 800">$5000</span>
+                    Collect the dream<br>for only <span style="color: #fc73da; font-weight: 800">$5000</span>
                 </p>
             </div>
             <button>
                 <span style="font-weight: 600; font-size:20px">Order now </span>
             </button>
         </div>
-        </section>
-        <section class="info-page">
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-line">
-                <div class="header-logo">
-                    <img src="../assets/general/logotype.svg" alt="">
-                </div>
-                <p class="info">2023 Ⓒ Minks, Belarus</p>
-                <nav class="footer__menu">
-                    <ul class="footer__menu-list">
-                        <li class="telegram">
-                            <a class="footer__menu-title" href="">Telegram</a>
-                        </li>
-                        <li class="instagram">
-                            <a class="footer__menu-title" href="">Instagram</a>
-                        </li>
-                    </ul>
-                </nav>
+    </div>
+    <div id="info-page">
+        <div class="content-collapsible">
+            <div class="collapsible">+ Monitor</div>
+            <div class="content">
+                <p>Well, where without a 2k monitor at 240 Hz.<br>
+                    The bigger the screen, the better!</p>
+            </div>
+            <div class="collapsible">+ Keyboard</div>
+            <div class="content">
+                <p>What a cool computer and no noisy keyboard! And if you put<br>
+                    weights in the mouse, then you don’t need to go to the rocking chair!</p>
+            </div>
+            <div class="collapsible">+ System unit</div>
+            <div class="content">
+                <p>Of course, the system unit! The most important,<br>
+                    to shine brighter than a table lamp!</p>
+            </div>
+            <div class="collapsible">+ Headset</div>
+            <div class="content">
+                <p>Don't forget the headset. Neighbors should too<br>
+                    be aware that you have a cool computer!</p>
             </div>
         </div>
-    </footer>
+    </div>
 
+    <div id="shop-page">
+        <div class="container">
+            <div class="header-title-course">
+                Accessories shop
+            </div>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/monitor.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                Gaming monitor<br>Dell Alienware
+                            </div>
+                            <div class="subtitle-card">
+                                Image smoothness, lightning fast<br>
+                                matrix response time
+                            </div>
+                            <div class="line-price">
+                                <div class="price">1 400 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/monitor.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                Gaming monitor<br>Dell Alienware
+                            </div>
+                            <div class="subtitle-card">
+                                Image smoothness, lightning fast<br>
+                                matrix response time
+                            </div>
+                            <div class="line-price">
+                                <div class="price">1 400 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/earpods.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                Headphones Razer Kraken<br>Kitty Edition
+                            </div>
+                            <div class="subtitle-card">
+                                Good sound, convenient software,<br>
+                                appearance, microphone freely regulates
+                            </div>
+                            <div class="line-price">
+                                <div class="price">300 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/videocart.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                GeForce graphics card<br>RTX 3090 24 GB
+                            </div>
+                            <div class="subtitle-card">
+                                High performance, cool<br>
+                                design, high-quality cooling
+                            </div>
+                            <div class="line-price">
+                                <div class="price">3 500 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/monitor.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                Gaming monitor<br>Dell Alienware
+                            </div>
+                            <div class="subtitle-card">
+                                Image smoothness, lightning fast<br>
+                                matrix response time
+                            </div>
+                            <div class="line-price">
+                                <div class="price">1 400 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/earpods.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                Headphones Razer Kraken<br>Kitty Edition
+                            </div>
+                            <div class="subtitle-card">
+                                Good sound, convenient software,<br>
+                                appearance, microphone freely regulates
+                            </div>
+                            <div class="line-price">
+                                <div class="price">300 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="card-content">
+                            <div class="picture">
+                                <img src="../assets/shop/videocart.png" alt="">
+                            </div>
+                            <div class="title-card">
+                                GeForce graphics card<br>RTX 3090 24 GB
+                            </div>
+                            <div class="subtitle-card">
+                                High performance, cool<br>
+                                design, high-quality cooling
+                            </div>
+                            <div class="line-price">
+                                <div class="price">3 500 $</div>
+                                <a class="joistick" href="">
+                                    <img src="../assets/shop/joistick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-prev arrow left"></div>
+                <div class="slider-next arrow"></div>
+            </div>
+        </div>
+    </div>
+    <div id="course-page">
+        <div class="container">
+            <div class="header-title-course">
+                Registration for the course
+            </div>
+            <div class="subtitle">
+                We offer you an excellent opportunity to dive<br>
+                into the world of computer technology and <span
+                    style=" font-weight: 800; color: white; text-shadow: #fc73da 3px 0 10px;">personally</span><br>
+                build your computer!
+            </div>
+            <div class="input-container">
+                <input type="text" id="input1" required="">
+                <label for="input1" class="label">Enter name</label>
+                <div class="underline"></div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="input2" required="">
+                <label for="input2" class="label">Enter e-mail</label>
+                <div class="underline"></div>
+            </div>
+            <div class="label-container">
+                <label>
+                    <input type="checkbox" name="agree" value="confirm"> I agree to the processing of my personal data
+                </label>
+            </div>
+            <div class="label-container">
+                <label>
+                    <input type="checkbox" name="accept" value="confirm"> I accept the privacy policy
+                </label>
+            </div>
+            <div class="submit-button">
+                <a href="#">Записаться</a>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="footer">
+    <div class="container">
+        <div class="footer-line">
+            <div class="header-logo">
+                <img src="../assets/general/logotype.svg" alt="">
+            </div>
+            <p class="info">2023 Ⓒ Minks, Belarus</p>
+            <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="telegram">
+                        <a class="footer__menu-title" href="">Telegram</a>
+                    </li>
+                    <li class="instagram">
+                        <a class="footer__menu-title" href="">Instagram</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>
 </body>
-<script src="../js/shop.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="../static/js/shop.js"></script>
+<script src="../static/js/message_button.js"></script>
+<script src="../static/js/navigation.js"></script>
 </html>

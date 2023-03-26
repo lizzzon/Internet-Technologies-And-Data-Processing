@@ -212,7 +212,7 @@ input {
 }
 
 .overlay {
-    background-image: url('../assets/auth/comp.gif');
+    background-image: url('../../assets/auth/comp.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;

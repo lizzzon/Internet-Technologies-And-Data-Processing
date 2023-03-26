@@ -7,15 +7,15 @@ const sliderItemWidth = sliderItems[0].offsetWidth;
 let currentIndex = 0;
 console.log(sliderItems);
 sliderPrev.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    sliderWrapper.style.transform = `translateX(-${currentIndex * (sliderItemWidth + 50)}px)`;
-  }
+    if (currentIndex > 0) {
+        currentIndex--;
+        sliderWrapper.style.transform = `translateX(-${currentIndex * (sliderItemWidth + 50)}px)`;
+    }
 });
 
 sliderNext.addEventListener('click', () => {
-  if (currentIndex < sliderItems.length - 3) {
-    currentIndex++;
-    sliderWrapper.style.transform = `translateX(-${currentIndex * (sliderItemWidth + 50)}px)`;
-  }
+    if (currentIndex < sliderItems.length - 3) {
+        currentIndex++;
+        sliderWrapper.style.transform = `translateX(-${currentIndex * (sliderItemWidth + 50)}px)`;
+    }
 });
