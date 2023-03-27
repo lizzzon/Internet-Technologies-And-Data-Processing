@@ -11,7 +11,7 @@ In total, the site has 6 blocks:
   + Registration for the course
   + Contacts
   + Authorization/registration
-  + Basket
+  + Shop
 
 Initially, the client gets to the home page of the site, where, for ease of use,
 chooses for himself how best to move between blocks - a consequence of the swipe down
@@ -27,17 +27,6 @@ The main functionality of this page is site navigation and content.
 general information on the topic. An active "Order Now" button redirects the user
 to the block of information about the course. The slider at the bottom contains general information about the pros of having a powerful computer.
 User authorization is performed after pressing the button with the "user" icon.
-The cart button, when clicked, will show the contents of the cart.
-
-    At this stage, you can identify the main functionality of the site.
-The user enters the "components" section, where he selects the desired ones and adds them to the basket.
-It is possible to enroll in a course on a separate block of the site (at the same time, the cost of the course when registering for it
-automatically added to the total cost of the basket).
-
-![image](./mock_up/assets/basket.png)
-
-
-The screenshot above shows the cart popup layout.
 
     Authentication.
 User authentication is implemented by a window with a choice of the desired action - registration or authorization.
@@ -62,12 +51,23 @@ The main activity is hints.
 When you click on the "+" sign, a tooltip appears. In this screenshot, all hints are active.
 
     Catalog page - shop.
-This page is a store of accessories that can be purchased (add to cart). To do this, click on the joystick icon.
+This page displays a summary of the products presented in the store.
+Click on the "Go to store" button to go to the store.
 
 ![image](./mock_up/assets/shop.png)
 
-There is also an option to select the category of the desired device.
-The main content of the page is a brief information about the purchased goods.
+After pressing the button, you will be redirected to the store page. There you can directly select the product,
+and add it to cart. Clicking on the compics text will take you to the main page.
+
+![image](./mock_up/assets/shop-cart.png)
+
+The basket is pulled out when you click on the package icon on the right side. When adding
+a new product that is already in the cart, the user will receive a notification.
+The quantity of goods can be increased in the basket itself. When you click on the buy button, the contents of the basket 
+will be reset to zero, and you will also receive a notification about the purchase of the contents of the basket. 
+The cart layout is shown below.
+
+![image](./mock_up/assets/cart.png)
 
     Registration page for the course + contacts (footer).
 This page contains user registration for computer assembly courses.
