@@ -47,6 +47,7 @@ header {
     color: white;
     text-shadow: #fc73da 1px 0 20px;
     font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .welcome {
@@ -131,7 +132,7 @@ section {
     min-height: 100vh;
     padding: 20px;
     background: white;
-    box-shadow: -2px 0 7px #4bb6b7;
+    box-shadow: -2px 0 3px #dddddd;
     transition: 0.3s;
 }
 

@@ -17,6 +17,7 @@ h2 {
 #info-page {
     background-image: url("../../assets/main_info_pages/info/info.png");
     background-size: cover;
+    min-height: 770px;
 }
 
 #shop-page {
