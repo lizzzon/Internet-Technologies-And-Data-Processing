@@ -11,7 +11,7 @@
     padding-top: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-item {
@@ -19,7 +19,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
-    margin-right: 80px;
+    margin: 0 20px;
 
     transition: color 0.3s linear;
 }
@@ -28,16 +28,10 @@
     color: #fc73da
 }
 
-.auth {
-    position: absolute;
-    top: 18px;
-    right: 300px
-}
-
 /*Main*/
 
 .header-title {
-    margin-top: -600px;
+    margin-top: -650px;
     text-align: left;
     margin-left: 55px;
     font-weight: 800;
@@ -87,7 +81,7 @@ button {
     height: 3em;
     line-height: 2em;
     text-align: center;
-    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 300%;
     border-radius: 30px;
     z-index: 1;
@@ -118,7 +112,7 @@ button:before {
     right: -5px;
     bottom: -5px;
     z-index: -1;
-    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 400%;
     border-radius: 35px;
     transition: 1s;
@@ -126,4 +120,108 @@ button:before {
 
 button:hover::before {
     filter: blur(10px);
+}
+
+html {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+    .header {
+        background-image: url('../../assets/main_info_pages/main/main-page-mobile.png');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #main-page .container {
+        margin: 0 50px !important;
+    }
+
+    #main-page .container {
+        margin-top: -680px !important;
+    }
+
+    #info-page {
+        margin-top: -250px;
+    }
+
+    .nav-item {
+        font-size: 15px;
+        margin: 0 50px;
+    }
+
+    .auth > a > img {
+        max-width: 70px;
+    }
+
+    .header-logo > img {
+        max-width: 200px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-down {
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-title {
+        margin-top: 0;
+        text-align: center;
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .header-subtitle {
+        margin-top: 0;
+        position: static;
+        padding-top: 0;
+        left: 0;
+        color: black;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .header-price {
+        margin-top: 0;
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        position: static;
+        padding-top: 0;
+        left: 0;
+    }
+
+    button {
+        margin-top: 0px;
+        left: 0px;
+    }
+
+    button {
+        margin-top: 0;
+        position: static;
+        left: 0;
+        margin-bottom: 50px;
+    }
+
+    button:before {
+        position: static;
+    }
 }

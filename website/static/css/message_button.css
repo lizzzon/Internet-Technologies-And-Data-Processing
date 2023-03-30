@@ -6,11 +6,12 @@
     cursor: pointer;
     padding: 18px;
     width: 130px;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 17px;
     border-radius: 40px;
     font-weight: 700;
+    margin: 8px 0;
 }
 
 .active,
@@ -34,6 +35,42 @@ p {
 }
 
 .content-collapsible {
-    padding-top: 140px;
-    padding-left: 340px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .collapsible {
+        background-color: #4bb6b7;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        width: 100px;
+        text-align: left;
+        outline: none;
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .content-collapsible {
+        padding-top: 0;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .content {
+        width: 50%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 10px;
+    }
 }

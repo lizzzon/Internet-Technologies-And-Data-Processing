@@ -8,9 +8,9 @@
     height: 18%;
 }
 
-.footer__menu{
+.footer__menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-line {
@@ -30,6 +30,7 @@
 
     transition: color 0.3s linear;
 }
+
 .footer__menu-title:hover {
     color: #fc73da
 }
@@ -42,7 +43,25 @@ li.instagram {
     list-style-image: url(../../assets/general/instagram.png);
     padding-top: 10px;
 }
+
 p {
     font-size: 20px;
     font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    #footer p {
+        font-size: 10px;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+
+    #footer li.instagram {
+        padding-top: 5px;
+    }
+
+    .footer__menu-title {
+        font-size: 13px;
+        margin-right: 80px;
+    }
 }

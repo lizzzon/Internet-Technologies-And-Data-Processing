@@ -1,7 +1,7 @@
 /*Site Navigation*/
 
 html, body, header, #info-page, #shop-page, #course-page {
-    height: 100%;
+    max-height: 100%;
 }
 
 #main-page, #info-page, #shop-page, #course-page {
@@ -17,21 +17,21 @@ h2 {
 #info-page {
     background-image: url("../../assets/main_info_pages/info/info.png");
     background-size: cover;
-    min-height: 770px;
 }
 
 #shop-page {
     background-image: url("../../assets/shop/body/shop-page.png");
     background-size: cover;
+    max-height: 100%;
+}
+
+#shop-page > .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #course-page {
     background-image: url("../../assets/course/course-page.png");
     background-size: cover;
-}
-
-.page {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
 }
