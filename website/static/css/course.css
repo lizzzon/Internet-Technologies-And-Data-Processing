@@ -2,13 +2,13 @@
 
 .header-title-course {
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 5px;
     font-size: 60px;
     color: white;
     text-shadow: #fc73da 1px 0 20px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -104,8 +104,6 @@ input[type="checkbox"] {
     position: relative;
     left: 45%;
     padding-top: 240px;
-    margin-right: 1060px;
-    margin-left: -310px;
     transform: translate(-50%, -50%);
 }
 
@@ -125,4 +123,44 @@ input[type="checkbox"] {
 
 .submit-button a:hover {
     letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+    .header-title-course {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        letter-spacing: 2px;
+        align-items: center;
+    }
+
+    .input-container input[type="text"] {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .input-container .underline {
+        width: 100%;
+    }
+
+    .submit-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        left: 0;
+        padding-top: 100px;
+        margin-right: 0;
+        margin-left: 0;
+        transform: translate(0%, -50%);
+    }
+
+    .submit-button a {
+        font-size: 20px;
+    }
 }
