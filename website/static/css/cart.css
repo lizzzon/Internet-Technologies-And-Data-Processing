@@ -17,7 +17,7 @@ img {
 body {
     color: black;
     background-image: linear-gradient(-110deg, #1A53D0, #F2A3FD);
-    height: 100vh;
+    height: 100%;
 }
 
 header {
@@ -268,8 +268,8 @@ section {
     }
 
     .container {
-        margin: 0 5px;
-        width: 60%;
+        margin: 0 10px;
+        width: 70%;
     }
 
     .shop {
@@ -280,6 +280,7 @@ section {
 @media (max-width: 768px) {
     .container {
         margin: 0 10px !important;
+        width: 80%;
     }
 
     .nav {

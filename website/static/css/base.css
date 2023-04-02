@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    margin: 0 166px;
+    margin: 0 150px;
 }
 
 @media (max-width: 768px) {
