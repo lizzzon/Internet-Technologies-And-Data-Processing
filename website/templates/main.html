@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/css/course.css">
     <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/base.css">
-    <link rel="shortcut icon" href="../assets/general/logo.png" type="image/png">
+    <link rel="shortcut icon" href="../static/assets/general/logo.png" type="image/png">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="header-line">
                 <div class="header-logo">
-                    <img src="../assets/general/logotype.svg" alt="">
+                    <img src="../static/assets/general/logotype.svg" alt="">
                 </div>
                 <div class="nav">
                     <a class="nav-item" href="#info-page">Information</a>
@@ -27,8 +27,8 @@
                     <a class="nav-item" href="#footer">Contacts</a>
                 </div>
                 <div class="auth">
-                    <a href="auth.html">
-                        <img src="../assets/main_info_pages/main/user.png" alt="">
+                    <a href="auth">
+                        <img src="../static/assets/main_info_pages/main/user.png" alt="">
                     </a>
                 </div>
             </div>
@@ -50,9 +50,6 @@
                         Collect the dream<br>for only <span style="color: #fc73da; font-weight: 800">$5000</span>
                     </p>
                 </div>
-                <button type="button">
-                    <span style="font-weight: 600; font-size:20px">Order now</span>
-                </button>
             </div>
         </div>
         <div id="info-page">
@@ -92,138 +89,33 @@
                         you can separately purchase components for your computer
                     </div>
                     <div class="header-container">
-                        <a href="cart.html">
-                            <img src="../assets/shop/body/shop-button.png" alt="">
+                        <a href="shop">
+                            <img src="../static/assets/shop/body/shop-button.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <div class="slider-item">
+
+                        {% for product in products %}
+                            <div class="slider-item">
                             <div class="card-content">
                                 <div class="picture">
-                                    <img src="../assets/shop/products/monitor.png" alt="">
+                                    <img src="{{ product.img | replace_img}}" alt="">
                                 </div>
                                 <div class="title-card">
-                                    Gaming monitor<br>Dell Alienware
+                                    {{ product.title }}
                                 </div>
                                 <div class="subtitle-card">
-                                    Image smoothness, lightning fast<br>
-                                    matrix response time
+                                    {{ product.info }}
                                 </div>
                                 <div class="line-price">
-                                    <div class="price">1 400 $</div>
+                                    <div class="price">{{ product.price }} $</div>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="slider-item">
-                            <div class="card-content">
-                                <div class="picture">
-                                    <img src="../assets/shop/products/mouse.png" alt="">
-                                </div>
-                                <div class="title-card">
-                                    Gaming mouse<br>Razer DeathAdder V2
-                                </div>
-                                <div class="subtitle-card">
-                                    Comfortable shape, suitable<br>
-                                    for games, backlight
-                                </div>
-                                <div class="line-price">
-                                    <div class="price">120 $</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="slider-item">
-                            <div class="card-content">
-                                <div class="picture">
-                                    <img src="../assets/shop/products/earpods.png" alt="">
-                                </div>
-                                <div class="title-card">
-                                    Headphones Razer Kraken<br>Kitty Edition
-                                </div>
-                                <div class="subtitle-card">
-                                    Good sound, convenient software,<br>
-                                    appearance, microphone freely regulates
-                                </div>
-                                <div class="line-price">
-                                    <div class="price">300 $</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="slider-item">
-                            <div class="card-content">
-                                <div class="picture">
-                                    <img src="../assets/shop/products/videocart.png" alt="">
-                                </div>
-                                <div class="title-card">
-                                    GeForce graphics card<br>RTX 3090 24 GB
-                                </div>
-                                <div class="subtitle-card">
-                                    High performance, cool<br>
-                                    design, high-quality cooling
-                                </div>
-                                <div class="line-price">
-                                    <div class="price">3 500 $</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="slider-item">
-                            <div class="card-content">
-                                <div class="picture">
-                                    <img src="../assets/shop/products/micro.png" alt="">
-                                </div>
-                                <div class="title-card">
-                                    Microphone<br>Razer Seiren v2 pro
-                                </div>
-                                <div class="subtitle-card">
-                                    Good sound recording quality,<br>
-                                    windproof, nice appearance
-                                </div>
-                                <div class="line-price">
-                                    <div class="price">200 $</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="slider-item">
-                            <div class="card-content">
-                                <div class="picture">
-                                    <img src="../assets/shop/products/keyboard.png" alt="">
-                                </div>
-                                <div class="title-card">
-                                    Keyboard<br>Razer BlackWidow v3
-                                </div>
-                                <div class="subtitle-card">
-                                    Build quality, drivers, lighting,<br>
-                                    programmability of everything
-                                </div>
-                                <div class="line-price">
-                                    <div class="price">350 $</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="slider-item">
-                            <div class="card-content">
-                                <div class="picture">
-                                    <img src="../assets/shop/products/sys_block.png" alt="">
-                                </div>
-                                <div class="title-card">
-                                    System block<br>NZXT h510 elite
-                                </div>
-                                <div class="subtitle-card">
-                                    Beautiful and elegant, dust filters,<br>
-                                    cool cooling system
-                                </div>
-                                <div class="line-price">
-                                    <div class="price">250 $</div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
+
                     </div>
                     <div class="slider-prev arrow left"></div>
                     <div class="slider-next arrow"></div>
@@ -262,7 +154,7 @@
                     </label>
                 </div>
                 <div class="submit-button">
-                    <a href="#">Sign up for a course</a>
+                    <a href="auth">Sign up for a course</a>
                 </div>
             </div>
         </div>
@@ -271,7 +163,7 @@
         <div class="container">
             <div class="footer-line">
                 <div class="header-logo">
-                    <img src="../assets/general/logotype.svg" alt="">
+                    <img src="../static/assets/general/logotype.svg" alt="">
                 </div>
                 <p class="info">2023 Ⓒ Minks, Belarus</p>
                 <nav class="footer__menu">

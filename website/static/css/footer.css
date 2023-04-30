@@ -36,11 +36,11 @@
 }
 
 li.telegram {
-    list-style-image: url(../../assets/general/telegram.png);
+    list-style-image: url(../assets/general/telegram.png);
 }
 
 li.instagram {
-    list-style-image: url(../../assets/general/instagram.png);
+    list-style-image: url(../assets/general/instagram.png);
     padding-top: 10px;
 }
 

@@ -15,12 +15,12 @@ h2 {
 }
 
 #info-page {
-    background-image: url("../../assets/main_info_pages/info/info.png");
+    background-image: url("../assets/main_info_pages/info/info.png");
     background-size: cover;
 }
 
 #shop-page {
-    background-image: url("../../assets/shop/body/shop-page.png");
+    background-image: url("../assets/shop/body/shop-page.png");
     background-size: cover;
 }
 
@@ -31,6 +31,6 @@ h2 {
 }
 
 #course-page {
-    background-image: url("../../assets/course/course-page.png");
+    background-image: url("../assets/course/course-page.png");
     background-size: cover;
 }

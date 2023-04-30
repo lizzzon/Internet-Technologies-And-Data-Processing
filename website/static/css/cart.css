@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url('../../assets/shop/body/shop-header.png');
+    background-image: url('../assets/shop/body/shop-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 100;

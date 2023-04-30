@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../static/css/cart.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/assets/general/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class = "nav container">
+            <a href="http://127.0.0.1:8000/" class="logo">Compics</a>
+            <i class="bx bx-shopping-bag" id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0$</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <div class="shop-content">
+            {% for product in products %}
+            <div class="product-box">
+                <img src="{{ product.img | replace_img }}" alt="" class="product-img">
+                <h2 class="product-title">
+                    {{ product.title }}
+                </h2>
+                <span class="price">{{ product.price }}$</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+<script src="../static/js/cart.js"></script>
+</html>
